@@ -22,7 +22,7 @@ def Retry_request(url): #远程下载
 
 def writeaddress(web,sub):             # 自定义规则 
     try:
-        affconfig='aff = '+'\'不限制机场，规则生成失败，请检测调用格式。STC测试可用，注册地址：bilibili.stchk.cloud/auth/register?code=gzI5'
+        affconfig='aff = '+'\'' + api.aff.aff
         affconfig = affconfig + '\'\n' + 'subip = \''+web
         affconfig = affconfig + '\'\n' + 'apiip = \''+web
         affconfig = affconfig + '\'\n' + 'passwd = \''+ api.aff.passwd+'\''   

@@ -1,5 +1,8 @@
 #! /bin/sh 
 echo "-----------------------------------Start-------------------------------------"
+core_host=$CORE_HOST
+core_host=${core_host//\//\\\/}
+sed -i "s/^managed_config_prefix=.*/managed_config_prefix=$core_host/" config/pref.ini
 echo "------------------------------------While循环----------------------------------------"
 while true
 do
